@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+    color:  brown;
+}
+
+#point_mount {
+    width: 960px;
+    margin: 8px auto;
+    background-color: blanchedalmond;
+    border: 2px dotted darksalmon;
+    border-radius: 5px;
+}
+
+.note_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    padding: 8px;
+}
+
+.note_editor {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+
+.textarea {
+    width: 400px;
+    margin: 5px;
+}
+
+.add_btn {
+    width: 120px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.colorsHolder {
+    width: 400px;
+    height: 70px;
+    margin: 5px;
+    text-align: center;
+    background-color: lightgray;
+    line-height: 110px;
+}
+
+.color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.color:hover {
+    cursor: pointer;
+}
+
+.enter_tags {
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid black;
+    line-height: 50px;
+}
+
+.tags {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+.tag {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.tag:hover {
+    cursor: pointer;
+    color: darkblue;
+    text-decoration-color: darkblue;
+}
+
+.note_grid {
+    margin: 0 auto;
+}
+
+.note {
+    position: relative;
+    width: 200px;
+    height: auto;
+    float: left;
+    border: 1px solid black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    padding: 3px;
+    transition: all 0.3s;
+}
+
+.note:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.note:hover .delete_btn {
+    display: inline-block;
+}
+
+.delete_btn {
+    position: absolute;
+    padding: 2px;
+    top: -2px;
+    right: 5px;
+    color: gray;
+    display: none;
+    font-size: 16px;
+}
+
+.delete_btn:hover {
+    cursor: pointer;
+}
+
